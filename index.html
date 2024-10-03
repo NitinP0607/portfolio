@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nitin Patel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nitin Patel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-cantainer">
+            <img src="./Assets/profile.jpg" alt="Nitin Patel profile" />
+        </div>
+        <div class="section__text">
+            <p class="section-text__p1">
+                Hello I'm
+            </p>
+            <h1 class="title">Nitin Patel</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <buttun class="btn btn-color-2" onclick="window.open('./Assets/Nitin resume.pdf')">
+                    Download CV
+                </buttun>
+                <buttun class="btn btn-color-1" onclick="location.href='./#contacts'"">
+                    Contact Info
+                </buttun>
+            </div>
+            <div id="social-container">
+                <img src="./Assets/linkedin.png" 
+                alt="My linkedin Profile" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/patelnitin1299'">
+                <img src="./Assets/github.png" 
+                alt="My Github Account"
+                class="icon"
+                onclick="location.href='https://github.com/NitinP0607'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">
+            Get to know more 
+        </p>
+        <h1 class="title">About Me </h1>
+        <div class="section-container">
+            <div class="section__pic-cantainer">
+                <img src="./Assets/aboutprofile.png" style="border-radius: 6rem;" 
+                alt="Profile picture" 
+                class="about-pic">
+            </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./Assets/experience.png" 
+                            alt="Expereince icon" 
+                            class="icon">
+                            <h3>Expereince</h3>
+                            <p>Fresher in IT sector but 1 Year expereince in BPO.
+                                <br>Bussiness Developement Executive.</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./Assets/education.png" 
+                            alt="Education icon" 
+                            class="icon">
+                            <h3>Education</h3>
+                            <p>Bachelor of Technology
+                                <br>Electronics and communication Engineering (2020-2024)</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p style="color:blue; line-height: 30px;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black;font-weight: bolder;"">
+                            Hey Everyone , I'm Nitin Patel a certified and skilled web developer, 
+                            who are looking for his first tech job where i can utilise my knowledge and skills for the growth of the company.
+                            . I have deep knowledge and skill in web-development.  
+                            i can work on vanilla javascript as well work on frameworks like Reactjs with backend in Node Js.
+                        </p>
+                    </div>
+                </div>
+                <img src="./Assets/arrow.png" 
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#experience'">
+        </div>
+    
+ </section>
+ <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills </h1>
+    <div class="expereince-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="expereince-sub-title">
+                    Frontend Developer
+                </h2>
+                <div class="article-container">
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Advanced HTML</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Basic CSS with its frameworks like Bootstrap,Responsive Web-design</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Javascript</h3>
+                            <p>DOM,BOM,Promises,JSON,OOPs concept,Advance Javascript</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>React Js</h3>
+                            <p>Routing,Hooks and States,JSX,Typescript,Intermediate</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Material UI/UX</h3>
+                            <p>Basic to Intermediate level</p>
+                        </div>
+                    </Article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="expereince-sub-title">
+                    Backend Developer
+                </h2>
+                <div class="article-container">
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Javascript (Server side scripting)</h3>
+                            <p>Promises, Synchronous and Asynchronous Programming, API</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Node Js</h3>
+                            <p>API Testing, Object Oreinted Programming,</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Handling Promises,API,Routing,Middleware</p>
+                        </div>
+                    </Article>
+                    <Article>
+                        <img src="./Assets/checkmark.png" 
+                        alt="Expereince icon"
+                        class="icon">
+                        <div>
+                            <h3>Mongo db</h3>
+                            <p>Intermediate level</p>
+                        </div>
+                    </Article>
+        </div>
+    </div>
+    <img src="./Assets/arrow.png" 
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#experience'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="expereince-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-1.png" 
+                    alt="Projects 1"
+                    class="project-img">
+                </div>
+                <h2 class="expereince-sub-title project-title">Movie search Application</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://github.com/NitinP0607/Movies-search-application'">Github</button>
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://nitinp0607.github.io/Movies-search-application/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-2.png" 
+                    alt="Projects 2"
+                    class="project-img">
+                </div>
+                <h2 class="expereince-sub-title project-title">My Alexa</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://github.com/NitinP0607/Alexa'"">Github</button>
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://nitinp0607.github.io/Alexa/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-3.jpg" 
+                    alt="Projects 3"
+                    class="project-img">
+                </div>
+                <h2 class="expereince-sub-title project-title">Snake Game</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://github.com/NitinP0607/snakegame'">Github</button>
+                    <button class="btn btn-color-2 projects-btn" 
+                    onclick="location.href='https://nitinp0607.github.io/snakegame/'">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contacts">
+        <p class="section__text__p1"> Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" 
+                alt="Email png"
+                class="icon contact-icon">
+                <p><a href="mailto:patelnitin1299@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" 
+                alt="Email png"
+                class="icon contact-icon email-icon">
+                <p><a href="https://www.linkedin.com/in/patelnitin1299">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nitin Patel. All reserved</p>
+    </footer>
+ <script src="index.js"></script>
+</body>
+</html>
